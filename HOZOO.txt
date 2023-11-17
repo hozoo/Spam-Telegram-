@@ -1,0 +1,17 @@
+&pkg install -y git python
+$git clone https://github.com/hozoo/Spam-Telegram-
+$ cd Spam-Telegram-
+$ python3 setup.py -i
+
+file konfigurasi pengaturan ( apiID, apiHASH )
+$ python3 setup.py -c
+
+Untuk Menghasilkan Data Pengguna
+$ python3 scraper.py
+
+(members.csv adalah default jika Anda mengubah nama, gunakanlah)
+Kirim sms Massal Ke Data yang Dikumpulkan
+$ python3 smsbot.py members.csv
+
+Alat Pembaruan
+$ python3 setup.py -u
